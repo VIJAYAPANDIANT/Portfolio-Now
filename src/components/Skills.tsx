@@ -33,7 +33,7 @@ export const Skills = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {skills.map((skill, i) => (
             <motion.div
               key={skill.name}
@@ -41,41 +41,17 @@ export const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.05 }}
-              className="glass p-6 rounded-sm group transition-all hover:border-neon-blue/50 relative overflow-hidden flex flex-col justify-between h-48 cursor-default"
+              className="glass p-6 rounded-sm group transition-all hover:border-neon-blue/50 relative overflow-hidden"
             >
-              <div className="absolute top-0 right-0 p-2 opacity-[0.03] group-hover:opacity-10 transition-opacity">
-                <skill.icon size={72} />
+              <div className="absolute top-0 right-0 p-2 opacity-10 group-hover:opacity-30 transition-opacity">
+                <skill.icon size={48} />
               </div>
               
-              <div>
-                <div className="flex items-center justify-between mb-4">
-                  <div className={`p-3 rounded-sm bg-white/5 w-fit transition-all ${skill.color} group-hover:bg-white/10`}>
-                    <skill.icon size={22} />
-                  </div>
-                  <span className="text-[10px] font-mono text-gray-500 uppercase tracking-widest group-hover:text-neon-blue transition-colors">
-                    {skill.level >= 85 ? 'System Core' : 'Module Loaded'}
-                  </span>
-                </div>
-                
-                <h3 className="text-sm font-mono font-bold uppercase tracking-wider mb-2">{skill.name}</h3>
+              <div className={`p-3 rounded-sm bg-white/5 w-fit mb-6 transition-all ${skill.color}`}>
+                <skill.icon size={24} />
               </div>
-
-              {/* Progress bar */}
-              <div className="space-y-1.5">
-                <div className="flex items-center justify-between text-[10px] font-mono text-gray-500">
-                  <span>CAPACITY:</span>
-                  <span className="text-neon-blue">{skill.level}%</span>
-                </div>
-                <div className="h-1.5 bg-white/5 rounded-full overflow-hidden border border-white/5 relative">
-                  <motion.div
-                    initial={{ width: 0 }}
-                    whileInView={{ width: `${skill.level}%` }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1, delay: i * 0.05 + 0.2 }}
-                    className="h-full bg-gradient-to-r from-neon-blue to-neon-purple rounded-full"
-                  />
-                </div>
-              </div>
+              
+              <h3 className="text-sm font-mono font-bold uppercase tracking-wider">{skill.name}</h3>
             </motion.div>
           ))}
         </div>

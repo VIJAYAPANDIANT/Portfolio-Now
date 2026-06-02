@@ -34,6 +34,7 @@ export const Hero = () => {
             <span className="mr-2">&gt;</span>
             <Typewriter
               words={[
+                'Pre-Final Year CSE @ SRM Easwari Engineering College',
                 'Aspiring Software Development Engineer',
                 'AI & Backend Enthusiast',
                 'Creative Problem Solver',
@@ -50,13 +51,15 @@ export const Hero = () => {
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
             <motion.a
-              href="#projects"
+              href="https://vj-achievement-museum.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05, letterSpacing: '0.1em' }}
               whileTap={{ scale: 0.95 }}
               className="group relative px-10 py-4 bg-transparent border border-neon-blue text-neon-blue font-bold rounded-sm overflow-hidden transition-all hover:bg-neon-blue/10 hover:neon-glow"
             >
               <span className="relative z-10 flex items-center gap-2 uppercase tracking-wider">
-                Access Projects <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                Access Achievements <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </span>
             </motion.a>
 

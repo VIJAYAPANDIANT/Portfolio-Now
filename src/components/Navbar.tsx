@@ -12,11 +12,7 @@ const navLinks = [
   { name: 'Contact', href: '#contact' },
 ];
 
-interface NavbarProps {
-  onTerminalToggle: () => void;
-}
-
-export const Navbar: React.FC<NavbarProps> = ({ onTerminalToggle }) => {
+export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -41,7 +37,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onTerminalToggle }) => {
           className="text-2xl font-mono font-bold text-neon-blue flex items-center gap-2"
         >
           <span className="text-xs opacity-50 font-normal">[ ID ]</span>
-          VP_CORE
+          PORTFOLIO
         </motion.a>
 
         {/* Desktop Nav */}
@@ -58,12 +54,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onTerminalToggle }) => {
               {link.name}
             </motion.a>
           ))}
-          <button
-            onClick={onTerminalToggle}
-            className="ml-4 px-3 py-1 text-[10px] font-mono border border-neon-blue/40 text-neon-blue hover:bg-neon-blue/10 rounded-sm cursor-pointer transition-all hover:neon-glow uppercase tracking-wider"
-          >
-            [/SYS/CLI]
-          </button>
         </div>
 
         {/* Socials */}
@@ -82,7 +72,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onTerminalToggle }) => {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-white cursor-pointer"
+          className="md:hidden text-white"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X /> : <Menu />}
@@ -104,20 +94,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onTerminalToggle }) => {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-gray-300 hover:text-neon-blue transition-colors font-mono text-sm uppercase"
+                  className="text-gray-300 hover:text-neon-blue transition-colors"
                 >
                   {link.name}
                 </a>
               ))}
-              <button
-                onClick={() => {
-                  setIsMobileMenuOpen(false);
-                  onTerminalToggle();
-                }}
-                className="text-left text-neon-blue font-mono hover:text-white transition-colors cursor-pointer text-sm uppercase border border-neon-blue/20 p-2 rounded-sm"
-              >
-                &gt; Access Terminal CLI
-              </button>
             </div>
           </motion.div>
         )}
