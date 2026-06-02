@@ -64,7 +64,7 @@ export const Hero = () => {
             </motion.a>
 
             <motion.a
-              href="https://drive.google.com/file/d/1MnrqDQOTMRpgTuCP0qXi2hZse5IhQEVi/view?usp=sharing"
+              href="https://drive.google.com/file/d/1RlXtzKcIRbgj4RklKkE3NiJrvCQFicOf/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
