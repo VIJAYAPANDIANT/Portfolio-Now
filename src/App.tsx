@@ -1,8 +1,3 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import React, { useState, useEffect, useCallback } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
 import { Navbar } from './components/Navbar';
@@ -16,10 +11,13 @@ import { Footer } from './components/Footer';
 import { Scene } from './components/Scene';
 import { LoadingScreen } from './components/LoadingScreen';
 import { HUD } from './components/HUD';
+import { Terminal } from './components/Terminal';
+import { AIChatbot } from './components/AIChatbot';
 
 export default function App() {
   const [loading, setLoading] = useState(true);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [isTerminalOpen, setIsTerminalOpen] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 2500);
@@ -38,7 +36,7 @@ export default function App() {
   // Audio effect logic
   const playClick = () => {
     const audio = new Audio('https://assets.mixkit.co/active_storage/sfx/2568/2568-preview.mp3');
-    audio.volume = 0.1;
+    audio.volume = 0.05;
     audio.play().catch(() => {}); // Ignore if blocked by browser
   };
 
@@ -53,7 +51,7 @@ export default function App() {
 
       <Scene />
       <HUD />
-      <Navbar />
+      <Navbar onTerminalToggle={() => setIsTerminalOpen(true)} />
       
       {/* Interactive Mouse Light */}
       <div 
@@ -94,6 +92,16 @@ export default function App() {
       </main>
 
       <Footer />
+
+      {/* Floating AI Agent Chatbot */}
+      <AIChatbot />
+
+      {/* Interactive Cyber CLI overlay */}
+      <AnimatePresence>
+        {isTerminalOpen && (
+          <Terminal onClose={() => setIsTerminalOpen(false)} />
+        )}
+      </AnimatePresence>
     </div>
   );
 }

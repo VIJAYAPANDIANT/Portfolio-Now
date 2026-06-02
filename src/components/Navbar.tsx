@@ -12,7 +12,11 @@ const navLinks = [
   { name: 'Contact', href: '#contact' },
 ];
 
-export const Navbar = () => {
+interface NavbarProps {
+  onTerminalToggle: () => void;
+}
+
+export const Navbar: React.FC<NavbarProps> = ({ onTerminalToggle }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -54,6 +58,12 @@ export const Navbar = () => {
               {link.name}
             </motion.a>
           ))}
+          <button
+            onClick={onTerminalToggle}
+            className="ml-4 px-3 py-1 text-[10px] font-mono border border-neon-blue/40 text-neon-blue hover:bg-neon-blue/10 rounded-sm cursor-pointer transition-all hover:neon-glow uppercase tracking-wider"
+          >
+            [/SYS/CLI]
+          </button>
         </div>
 
         {/* Socials */}
@@ -72,7 +82,7 @@ export const Navbar = () => {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-white"
+          className="md:hidden text-white cursor-pointer"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X /> : <Menu />}
@@ -94,11 +104,20 @@ export const Navbar = () => {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-gray-300 hover:text-neon-blue transition-colors"
+                  className="text-gray-300 hover:text-neon-blue transition-colors font-mono text-sm uppercase"
                 >
                   {link.name}
                 </a>
               ))}
+              <button
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  onTerminalToggle();
+                }}
+                className="text-left text-neon-blue font-mono hover:text-white transition-colors cursor-pointer text-sm uppercase border border-neon-blue/20 p-2 rounded-sm"
+              >
+                &gt; Access Terminal CLI
+              </button>
             </div>
           </motion.div>
         )}
