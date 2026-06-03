@@ -83,15 +83,7 @@
   100% { transform: translateX(0); }
 }
 
-.animate-marquee-ltr {
-  display: flex;
-  width: max-content;
-  animation: marquee-ltr var(--marquee-duration, 35s) linear infinite;
-}
 
-.animate-marquee-ltr:hover {
-  animation-play-state: paused;
-}
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {

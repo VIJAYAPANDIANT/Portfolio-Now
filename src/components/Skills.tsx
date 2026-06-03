@@ -253,7 +253,7 @@ export const Skills = () => {
           <div className="text-left">
             <div className="flex items-center gap-4 mb-4">
               <div className="h-px w-12 bg-neon-blue" />
-              <h2 className="text-4xl font-bold font-mono uppercase tracking-tighter">
+              <h2 className="text-3xl md:text-4xl font-bold font-mono uppercase tracking-tighter whitespace-nowrap">
                 <span className="text-neon-blue">02.</span> SKILL_MATRIX
               </h2>
             </div>
@@ -296,7 +296,7 @@ export const Skills = () => {
                   <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-neon-blue/10 to-transparent" />
                   
                   <div 
-                    className="animate-marquee-ltr flex gap-4" 
+                    className="animate-[marquee-ltr_var(--marquee-duration,35s)_linear_infinite] hover:[animation-play-state:paused] flex gap-4 w-max" 
                     style={{ '--marquee-duration': '35s' } as React.CSSProperties}
                   >
                     {/* Render part A */}
@@ -315,7 +315,7 @@ export const Skills = () => {
                   <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-neon-blue/10 to-transparent" />
                   
                   <div 
-                    className="animate-marquee-ltr flex gap-4" 
+                    className="animate-[marquee-ltr_var(--marquee-duration,35s)_linear_infinite] hover:[animation-play-state:paused] flex gap-4 w-max" 
                     style={{ '--marquee-duration': '45s' } as React.CSSProperties}
                   >
                     {/* Render part A */}
@@ -334,7 +334,7 @@ export const Skills = () => {
                   <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-neon-blue/10 to-transparent" />
                   
                   <div 
-                    className="animate-marquee-ltr flex gap-4" 
+                    className="animate-[marquee-ltr_var(--marquee-duration,35s)_linear_infinite] hover:[animation-play-state:paused] flex gap-4 w-max" 
                     style={{ '--marquee-duration': '30s' } as React.CSSProperties}
                   >
                     {/* Render part A */}
