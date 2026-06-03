@@ -9,7 +9,7 @@ export const Contact = () => {
         <div className="flex items-center gap-4 mb-16">
           <div className="h-px w-12 bg-neon-blue" />
           <h2 className="text-4xl font-bold font-mono uppercase tracking-tighter">
-            <span className="text-neon-blue">05.</span> Comms_Channel
+            <span className="text-neon-blue">05.</span> CONTACT
           </h2>
         </div>
 

@@ -40,7 +40,7 @@ export const About = () => {
               <div className="flex items-center gap-4">
                 <div className="h-[2px] w-12 bg-neon-blue" />
                 <h2 className="text-4xl font-bold font-mono uppercase tracking-tighter">
-                  About Me
+                  <span className="text-neon-blue">01.</span> PROFILE
                 </h2>
               </div>
               <div className="text-[10px] font-mono text-neon-blue mt-1.5 ml-16 tracking-widest uppercase">

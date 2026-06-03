@@ -6,32 +6,42 @@ const projects = [
   {
     id: 1,
     title: 'Smart Resume Builder',
-    description: 'Full-stack application with JWT authentication, responsive dashboard, and AI ATS Checker using OpenAI Vision API.',
+    description: 'A full-stack AI-powered Resume Builder & ATS Checker. Features real-time side-by-side preview, ATS scoring, CV tailoring, and cover letter generation.',
     category: 'Web',
-    tech: ['React', 'Node.js', 'Supabase', 'Tailwind', 'OpenAI API'],
-    image: 'https://picsum.photos/seed/resume/600/400',
-    github: '#',
-    live: '#'
+    tech: ['React', 'Express.js', 'PostgreSQL', 'Gemini API', 'Tailwind'],
+    image: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=800&q=80',
+    github: 'https://github.com/VIJAYAPANDIANT/Smart-Resume-Builder',
+    live: 'https://smart-resume-builder-a1ej.vercel.app'
   },
   {
     id: 2,
     title: 'AI Smart Waste Mapping',
-    description: 'Platform using Node.js & Google Gemini API to classify waste images. Interactive dashboard and gamified rewards system.',
+    description: 'A community-driven platform empowering citizens to track and manage waste hotspots. Features AI-powered waste classification, live interactive mapping, and a gamified reputation system.',
     category: 'AI',
-    tech: ['Node.js', 'Supabase', 'Chart.js', 'Gemini API'],
-    image: 'https://picsum.photos/seed/waste/600/400',
-    github: '#',
+    tech: ['Node.js', 'Express.js', 'Supabase', 'Leaflet.js', 'Chart.js', 'Gemini API'],
+    image: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=80',
+    github: 'https://github.com/VIJAYAPANDIANT/AI-Powered-Smart-Waste-Mapping-Platform',
     live: '#'
   },
   {
     id: 3,
     title: 'Online Examination System',
-    description: 'Scalable examination system with RabbitMQ & Redis, multi-language compiler, and AI-based real-time proctoring.',
+    description: 'Cutting-edge Online Examination System with AI Proctoring. Features real-time monitoring, multi-language code execution, and dynamic leaderboards. Secure, scalable, and fully Dockerized.',
     category: 'Backend',
-    tech: ['React', 'Spring Boot', 'Redis', 'RabbitMQ', 'WebSockets'],
-    image: 'https://picsum.photos/seed/exam/600/400',
-    github: '#',
-    live: '#'
+    tech: ['React', 'Spring Boot', 'MySQL', 'Docker', 'WebSockets'],
+    image: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=800&q=80',
+    github: 'https://github.com/VIJAYAPANDIANT/Online-Examination-System',
+    live: 'https://online-examination-system-m6sf.vercel.app'
+  },
+  {
+    id: 4,
+    title: 'College Discovery Platform',
+    description: 'Premium full-stack college discovery and comparison platform that helps students explore, compare, and analyze universities using smart filters, tuition insights, and reviews.',
+    category: 'Web',
+    tech: ['Next.js', 'React', 'TypeScript', 'Prisma', 'PostgreSQL', 'Tailwind', 'Zustand'],
+    image: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80',
+    github: 'https://github.com/VIJAYAPANDIANT/College-Discovery-Platform',
+    live: 'https://college-discovery-platform-mfqh.vercel.app'
   }
 ];
 
@@ -50,7 +60,7 @@ export const Projects = () => {
         <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-8">
           <div className="text-left">
             <h2 className="text-4xl font-bold font-mono uppercase tracking-tighter mb-4">
-              <span className="text-neon-blue">03.</span> Project_Archive
+              <span className="text-neon-blue">03.</span> PROJECT_ARCHIVE
             </h2>
             <p className="text-gray-500 font-mono text-xs uppercase tracking-widest">
               [ Total_Entries: {projects.length} ] [ Status: Verified ]

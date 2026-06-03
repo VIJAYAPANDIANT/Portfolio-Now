@@ -7,7 +7,8 @@ const timeline = [
     type: 'work',
     title: 'SQL Developer Intern',
     company: 'Elevate Labs',
-    period: 'Jan 2026 - Present',
+    period: 'Jan 2026 - Apr 2026',
+    location: 'Remote',
     desc: 'Completed SQL tasks involving queries, joins, and data analysis. Built monthly SQL-based real-world projects and optimized relational database queries.',
     icon: Briefcase
   },
@@ -16,6 +17,7 @@ const timeline = [
     title: 'Green Intern',
     company: '1M1B (1 Million for 1 Billion)',
     period: 'Feb 2026 - Mar 2026',
+    location: 'Remote',
     desc: 'Designed and developed an AI-Powered Smart Waste Mapping Platform with real-time geospatial tracking to analyze and visualize waste accumulation patterns.',
     icon: Briefcase
   },
@@ -24,6 +26,7 @@ const timeline = [
     title: 'Java Developer & UI/UX Intern',
     company: 'Codec Technologies',
     period: 'January 2026',
+    location: 'Remote',
     desc: 'Designed and developed Food Delivery System and Expense Tracker projects using Java and UI/UX principles, focusing on functionality and usability.',
     icon: Briefcase
   },
@@ -32,6 +35,7 @@ const timeline = [
     title: 'AI for Sustainability Virtual Intern',
     company: '1M1B (1 Million for 1 Billion)',
     period: 'Dec 2025 - Jan 2026',
+    location: 'Remote',
     desc: 'Developed "EcoWise Pro", a sustainability-focused project using AI concepts to explore real-world applications resolving environmental challenges.',
     icon: Briefcase
   },
@@ -40,6 +44,7 @@ const timeline = [
     title: 'AI / ML & Data Analytics Intern',
     company: 'NoviTech R&D Pvt Ltd',
     period: 'Aug 2025 - Dec 2025',
+    location: 'Remote',
     desc: 'Learned and applied fundamentals of Artificial Intelligence, Machine Learning, and Data Analytics through hands-on tasks involving data preprocessing and basic model building.',
     icon: Briefcase
   },
@@ -48,6 +53,7 @@ const timeline = [
     title: 'Java Development Intern',
     company: 'Cognifyz Technologies',
     period: 'Aug 2025 - Sep 2025',
+    location: 'Remote',
     desc: 'Strengthened core Java concepts through problem-solving and practical exercises while solving assigned Java programming tasks.',
     icon: Briefcase
   },
@@ -56,15 +62,17 @@ const timeline = [
     title: 'Cloud Development Intern',
     company: 'Zero2site',
     period: 'May 2025 - Jun 2025',
+    location: 'Remote',
     desc: 'Built cloud-based web applications using HTML, CSS, JavaScript, and Firebase. Developed Event Poll and Task Management modules.',
     icon: Briefcase
   },
   {
     type: 'education',
-    title: 'B.E. in Computer Science',
+    title: 'B.E. Computer Science and Engineering',
     company: 'Easwari Engineering College',
     period: '2024 - 2028',
-    desc: 'CGPA: 8.33. Focused on core programming, problem-solving, and practical applications.',
+    location: 'Chennai',
+    desc: 'CGPA: 8.49/10. Focused on software development, problem-solving, data structures, algorithms, and real-world project implementation.',
     icon: GraduationCap
   }
 ];
@@ -76,7 +84,7 @@ export const Experience = () => {
         <div className="flex items-center gap-4 mb-16">
           <div className="h-px w-12 bg-neon-blue" />
           <h2 className="text-4xl font-bold font-mono uppercase tracking-tighter">
-            <span className="text-neon-blue">04.</span> Timeline_Log
+            <span className="text-neon-blue">04.</span> EXPERIENCE_LOG
           </h2>
         </div>
 
@@ -96,14 +104,14 @@ export const Experience = () => {
                 }`}
               >
                 <div className="flex-1 w-full">
-                  <div className={`glass p-6 rounded-sm border-t border-neon-blue/20 relative ${
-                    i % 2 === 0 ? 'md:text-right' : 'md:text-left'
-                  }`}>
+                  <div className="glass p-6 rounded-sm border-t border-neon-blue/20 relative text-left">
                     <span className="text-neon-blue font-mono text-[10px] mb-2 block uppercase tracking-widest">
                       [ {item.period} ]
                     </span>
                     <h3 className="text-xl font-bold mb-1 font-mono uppercase">{item.title}</h3>
-                    <h4 className="text-gray-500 font-mono text-xs mb-4">{item.company}</h4>
+                    <h4 className="text-gray-500 font-mono text-xs mb-4 uppercase">
+                      {item.company} {item.location && ` • ${item.location}`}
+                    </h4>
                     <p className="text-gray-400 text-sm font-light leading-relaxed">{item.desc}</p>
                   </div>
                 </div>

@@ -28,7 +28,7 @@ export const LoadingScreen = () => {
           transition={{ delay: 0.5 }}
           className="absolute inset-0 flex items-center justify-center text-neon-blue font-bold text-xl"
         >
-          VP
+          VJ
         </motion.div>
       </div>
     </motion.div>

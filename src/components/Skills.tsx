@@ -254,7 +254,7 @@ export const Skills = () => {
             <div className="flex items-center gap-4 mb-4">
               <div className="h-px w-12 bg-neon-blue" />
               <h2 className="text-4xl font-bold font-mono uppercase tracking-tighter">
-                Skill_Matrix
+                <span className="text-neon-blue">02.</span> SKILL_MATRIX
               </h2>
             </div>
             <p className="text-gray-500 font-mono text-xs uppercase tracking-widest">
