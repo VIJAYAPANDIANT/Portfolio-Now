@@ -263,7 +263,7 @@ export const Skills = () => {
           </div>
 
           {/* Filtering Buttons */}
-          <div className="flex flex-wrap gap-2 w-full md:w-auto">
+          <div className="flex overflow-x-auto md:overflow-x-visible no-scrollbar flex-nowrap md:flex-wrap gap-2 w-full md:w-auto pb-3 md:pb-0">
             {categories.map((cat) => (
               <button
                 key={cat.id}
