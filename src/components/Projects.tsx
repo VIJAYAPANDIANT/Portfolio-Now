@@ -57,11 +57,14 @@ export const Projects = () => {
   return (
     <section id="projects" className="py-24">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-8">
+        <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-16 gap-8">
           <div className="text-left">
-            <h2 className="text-4xl font-bold font-mono uppercase tracking-tighter mb-4">
-              <span className="text-neon-blue">03.</span> PROJECT_ARCHIVE
-            </h2>
+            <div className="flex items-center gap-4 mb-4">
+              <div className="h-px w-12 bg-neon-blue" />
+              <h2 className="text-3xl md:text-4xl font-bold font-mono uppercase tracking-tighter whitespace-nowrap">
+                <span className="text-neon-blue">03.</span> PROJECT_ARCHIVE
+              </h2>
+            </div>
             <p className="text-gray-500 font-mono text-xs uppercase tracking-widest">
               [ Total_Entries: {projects.length} ] [ Status: Verified ]
             </p>
