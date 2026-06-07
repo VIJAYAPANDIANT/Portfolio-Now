@@ -30,13 +30,19 @@ export default function App() {
     if (!loading) {
       const hash = window.location.hash;
       if (hash) {
-        const targetId = hash.replace('#', '');
-        const element = document.getElementById(targetId);
-        if (element) {
-          setTimeout(() => {
-            element.scrollIntoView({ behavior: 'smooth' });
-          }, 800);
-        }
+        // Wait a brief moment for the loading screen fadeout and layout stabilization
+        setTimeout(() => {
+          const targetId = hash.replace('#', '');
+          const element = document.getElementById(targetId);
+          if (element) {
+            const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+            const offset = 80; // height of fixed navbar
+            window.scrollTo({
+              top: elementPosition - offset,
+              behavior: 'smooth'
+            });
+          }
+        }, 300);
       }
     }
   }, [loading]);

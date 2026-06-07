@@ -22,15 +22,19 @@ export const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     const targetId = href.replace('#', '');
     const element = document.getElementById(targetId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      const offset = 80; // height of fixed navbar
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: 'smooth'
+      });
       window.history.pushState(null, '', href);
     }
-    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -43,7 +47,7 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <motion.a
           href="#home"
-          onClick={(e) => handleLinkClick(e, '#home')}
+          onClick={(e) => handleNavClick(e, '#home')}
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           className="text-2xl font-mono font-bold text-neon-blue flex items-center gap-2"
@@ -58,7 +62,7 @@ export const Navbar = () => {
             <motion.a
               key={link.name}
               href={link.href}
-              onClick={(e) => handleLinkClick(e, link.href)}
+              onClick={(e) => handleNavClick(e, link.href)}
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.1 }}
@@ -106,7 +110,10 @@ export const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  onClick={(e) => handleLinkClick(e, link.href)}
+                  onClick={(e) => {
+                    setIsMobileMenuOpen(false);
+                    handleNavClick(e, link.href);
+                  }}
                   className="text-gray-300 hover:text-neon-blue transition-colors"
                 >
                   {link.name}
