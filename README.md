@@ -139,6 +139,6 @@ Ensure you have [Node.js](https://nodejs.org/) (v18+) installed.
 
 * **Email:** [vijayapandian112007@gmail.com](mailto:vijayapandian112007@gmail.com)
 * **Phone:** +91 8610554060
-* **LinkedIn:** [/in/vijayapandian-t](https://linkedin.com/in/vijayapandian-t)
-* **GitHub:** [@VIJAYAPANDIANT](https://github.com/VIJAYAPANDIANT)
+* **LinkedIn:** [vijayapandian-t](https://linkedin.com/in/vijayapandian-t)
+* **GitHub:** [VIJAYAPANDIANT](https://github.com/VIJAYAPANDIANT)
 * **LeetCode:** [hackervj18](https://leetcode.com/u/hackervj18)
