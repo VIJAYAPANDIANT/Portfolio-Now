@@ -26,6 +26,21 @@ export default function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    if (!loading) {
+      const hash = window.location.hash;
+      if (hash) {
+        const targetId = hash.replace('#', '');
+        const element = document.getElementById(targetId);
+        if (element) {
+          setTimeout(() => {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }, 800);
+        }
+      }
+    }
+  }, [loading]);
+
   const handleMouseMove = useCallback((e: React.MouseEvent | MouseEvent) => {
     setMousePos({ x: e.clientX, y: e.clientY });
   }, []);
