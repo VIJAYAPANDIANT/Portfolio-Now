@@ -44,7 +44,7 @@ export const Navbar = () => {
         isScrolled ? 'bg-black/80 backdrop-blur-md border-b border-neon-blue/20 py-3' : 'bg-transparent'
       )}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <div className="max-w-[1400px] mx-auto flex items-center justify-between">
         <motion.a
           href="#home"
           onClick={(e) => handleNavClick(e, '#home')}

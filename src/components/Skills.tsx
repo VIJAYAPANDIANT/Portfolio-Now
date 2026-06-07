@@ -247,7 +247,7 @@ export const Skills = () => {
 
   return (
     <section id="skills" className="py-24 bg-black/50 relative overflow-hidden">
-      <div className="container mx-auto px-6">
+      <div className="w-full max-w-[1400px] mx-auto px-6">
         {/* Title */}
         <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-16 gap-8">
           <div className="text-left">
@@ -263,7 +263,7 @@ export const Skills = () => {
           </div>
 
           {/* Filtering Buttons */}
-          <div className="flex overflow-x-auto md:overflow-x-visible no-scrollbar flex-nowrap md:flex-wrap gap-2 w-full md:w-auto pb-3 md:pb-0">
+          <div className="flex overflow-x-auto no-scrollbar flex-nowrap gap-2 w-full md:w-auto pb-3 md:pb-0">
             {categories.map((cat) => (
               <button
                 key={cat.id}

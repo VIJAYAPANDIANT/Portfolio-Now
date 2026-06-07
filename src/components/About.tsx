@@ -4,7 +4,7 @@ import { motion } from 'motion/react';
 export const About = () => {
   return (
     <section id="about" className="py-24 relative overflow-hidden">
-      <div className="container mx-auto px-6">
+      <div className="w-full max-w-[1400px] mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center gap-16">
           <motion.div
             initial={{ opacity: 0, x: -50 }}

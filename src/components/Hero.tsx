@@ -6,7 +6,7 @@ import { ArrowRight, Download } from 'lucide-react';
 export const Hero = () => {
   return (
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
-      <div className="container mx-auto px-6 z-10 text-center">
+      <div className="w-full max-w-[1400px] mx-auto px-6 z-10 text-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}

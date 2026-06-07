@@ -52,7 +52,7 @@ export const Contact = () => {
 
   return (
     <section id="contact" className="py-24">
-      <div className="container mx-auto px-6">
+      <div className="w-full max-w-[1400px] mx-auto px-6">
         <div className="flex items-center gap-4 mb-16">
           <div className="h-px w-12 bg-neon-blue" />
           <h2 className="text-3xl md:text-4xl font-bold font-mono uppercase tracking-tighter whitespace-nowrap">

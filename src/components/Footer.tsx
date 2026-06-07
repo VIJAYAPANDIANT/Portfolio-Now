@@ -7,7 +7,7 @@ export const Footer = () => {
 
   return (
     <footer className="py-12 border-t border-white/10 relative z-40">
-      <div className="container mx-auto px-6 text-center">
+      <div className="w-full max-w-[1400px] mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
