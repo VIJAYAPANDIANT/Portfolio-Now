@@ -14,20 +14,20 @@ const timeline = [
   },
   {
     type: 'work',
-    title: 'Green Intern',
-    company: '1M1B (1 Million for 1 Billion)',
-    period: 'Feb 2026 - Mar 2026',
-    location: 'Remote',
-    desc: 'Designed and developed an AI-Powered Smart Waste Mapping Platform with real-time geospatial tracking to analyze and visualize waste accumulation patterns.',
-    icon: Briefcase
-  },
-  {
-    type: 'work',
     title: 'Web Development Intern',
     company: 'Tamizhan Skills',
     period: 'March 2026',
     location: 'Remote',
     desc: 'Designed and built the Smart Resume Builder, a full-stack AI-powered Resume Builder and ATS Checker project, during the RISE Internship Program.',
+    icon: Briefcase
+  },
+  {
+    type: 'work',
+    title: 'Green Intern',
+    company: '1M1B (1 Million for 1 Billion)',
+    period: 'Feb 2026 - Mar 2026',
+    location: 'Remote',
+    desc: 'Designed and developed an AI-Powered Smart Waste Mapping Platform with real-time geospatial tracking to analyze and visualize waste accumulation patterns.',
     icon: Briefcase
   },
   {

@@ -134,6 +134,18 @@ export const Contact = () => {
                 />
               </motion.a>
               <motion.a
+                href="https://www.codechef.com/users/vijay_code07"
+                target="_blank" rel="noopener noreferrer" aria-label="CodeChef" title="CodeChef"
+                whileHover={{ y: -3, backgroundColor: 'rgba(0, 243, 255, 0.1)' }}
+                className="p-4 glass rounded-sm text-gray-500 hover:text-neon-blue transition-all border border-white/5 flex items-center justify-center group"
+              >
+                <img 
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/codechef.svg" 
+                  alt="CodeChef" 
+                  className="w-5 h-5 invert opacity-60 group-hover:opacity-100 transition-opacity"
+                />
+              </motion.a>
+              <motion.a
                 href="https://www.hackerrank.com/profile/vijayapandian111"
                 target="_blank" rel="noopener noreferrer" aria-label="HackerRank" title="HackerRank"
                 whileHover={{ y: -3, backgroundColor: 'rgba(0, 243, 255, 0.1)' }}
@@ -154,18 +166,6 @@ export const Contact = () => {
                 <img 
                   src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/geeksforgeeks.svg" 
                   alt="GeeksforGeeks" 
-                  className="w-5 h-5 invert opacity-60 group-hover:opacity-100 transition-opacity"
-                />
-              </motion.a>
-              <motion.a
-                href="https://www.codechef.com/users/vijay_code07"
-                target="_blank" rel="noopener noreferrer" aria-label="CodeChef" title="CodeChef"
-                whileHover={{ y: -3, backgroundColor: 'rgba(0, 243, 255, 0.1)' }}
-                className="p-4 glass rounded-sm text-gray-500 hover:text-neon-blue transition-all border border-white/5 flex items-center justify-center group"
-              >
-                <img 
-                  src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/codechef.svg" 
-                  alt="CodeChef" 
                   className="w-5 h-5 invert opacity-60 group-hover:opacity-100 transition-opacity"
                 />
               </motion.a>
