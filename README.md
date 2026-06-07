@@ -1,18 +1,20 @@
+<div align="center">
+
 # 🌌 Vijayapandian T - Sci-Fi Cyberpunk Portfolio
 
 A premium, highly interactive, and visually stunning personal portfolio designed with a futuristic **Heads-Up Display (HUD)** cyberpunk theme. The site features dynamic 3D elements, ambient sound design, smooth entry animations, and full responsiveness.
-
-> [!NOTE]
-> This application is powered by **React 19**, **TypeScript**, **Three.js / React Three Fiber**, and **Tailwind CSS v4**.
-
----
-
-## 🔗 Live Connections
 
 [![Portfolio](https://img.shields.io/badge/Live_Demo-00F3FF?style=for-the-badge&logo=vercel&logoColor=black)](https://vj-portfolio-website.vercel.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/vijayapandian-t)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/VIJAYAPANDIANT)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vijayapandian112007@gmail.com)
+
+</div>
+
+---
+
+> [!NOTE]
+> This application is powered by **React 19**, **TypeScript**, **Three.js / React Three Fiber**, and **Tailwind CSS v4**.
 
 ---
 
