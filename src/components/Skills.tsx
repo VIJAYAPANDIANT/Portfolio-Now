@@ -21,7 +21,8 @@ import {
   Sun,
   Server,
   Network,
-  Leaf
+  Leaf,
+  Cloud
 } from 'lucide-react';
 
 const categories = [
@@ -30,18 +31,17 @@ const categories = [
   { id: 'frontend', name: 'FRONTEND' },
   { id: 'backend', name: 'BACKEND' },
   { id: 'database', name: 'DATABASE' },
-  { id: 'analytics', name: 'ANALYTICS' },
-  { id: 'design', name: 'DESIGN' },
+  { id: 'cloud', name: 'CLOUD' },
   { id: 'tools', name: 'TOOLS' }
 ];
 
 const skills = [
   // Programming Languages
   { name: 'Java', categories: ['languages'], icon: Coffee, color: 'text-orange-500' },
-  { name: 'Python', categories: ['languages', 'backend', 'analytics'], icon: Terminal, color: 'text-yellow-500' },
+  { name: 'Python', categories: ['languages'], icon: Terminal, color: 'text-yellow-500' },
   { name: 'JavaScript', categories: ['languages'], icon: Code2, color: 'text-yellow-400' },
   { name: 'TypeScript', categories: ['languages'], icon: Code2, color: 'text-blue-500' },
-  { name: 'SQL', categories: ['languages', 'analytics'], icon: Database, color: 'text-blue-400' },
+  { name: 'SQL', categories: ['languages'], icon: Database, color: 'text-blue-400' },
   { name: 'C', categories: ['languages'], icon: Terminal, color: 'text-gray-400' },
 
   // Frontend Development
@@ -64,13 +64,11 @@ const skills = [
   { name: 'Prisma', categories: ['database'], icon: Network, color: 'text-indigo-400' },
   { name: 'DBMS', categories: ['database'], icon: Layers, color: 'text-emerald-400' },
 
-  // Data Analytics (Basic)
-  { name: 'Excel', categories: ['analytics'], icon: FileSpreadsheet, color: 'text-green-700' },
-
-  // UI / UX & Design
-  { name: 'Figma', categories: ['design'], icon: Figma, color: 'text-pink-500' },
-  { name: 'Canva', categories: ['design'], icon: Palette, color: 'text-blue-400' },
-  { name: 'WordPress', categories: ['design'], icon: Globe, color: 'text-sky-600' },
+  // Cloud & Deployment
+  { name: 'AWS', categories: ['cloud'], icon: Cloud, color: 'text-orange-400' },
+  { name: 'Firebase Hosting', categories: ['cloud'], icon: Server, color: 'text-yellow-500' },
+  { name: 'Vercel', categories: ['cloud'], icon: Globe, color: 'text-white' },
+  { name: 'Netlify', categories: ['cloud'], icon: Globe, color: 'text-teal-400' },
 
   // Tools & Technologies
   { name: 'Git', categories: ['tools'], icon: GitBranch, color: 'text-orange-600' },
@@ -78,13 +76,29 @@ const skills = [
   { name: 'GitLab', categories: ['tools'], icon: Gitlab, color: 'text-orange-500' },
   { name: 'VS Code', categories: ['tools'], icon: Laptop, color: 'text-blue-500' },
   { name: 'IntelliJ IDEA', categories: ['tools'], icon: Wrench, color: 'text-indigo-500' },
-  { name: 'Eclipse', categories: ['tools'], icon: Sun, color: 'text-blue-400' }
+  { name: 'Eclipse', categories: ['tools'], icon: Sun, color: 'text-blue-400' },
+
+  // Data Analytics & Spreadsheets (Moved to tools)
+  { name: 'Excel', categories: ['tools'], icon: FileSpreadsheet, color: 'text-green-700' },
+
+  // UI / UX & Design (Moved to tools)
+  { name: 'Figma', categories: ['tools'], icon: Figma, color: 'text-pink-500' },
+  { name: 'Canva', categories: ['tools'], icon: Palette, color: 'text-blue-400' },
+  { name: 'WordPress', categories: ['tools'], icon: Globe, color: 'text-sky-600' }
 ];
 
 // Helper mapping to official logos CDN
 const getLogoUrl = (skillName: string) => {
   const slug = skillName.toLowerCase().trim();
   switch (slug) {
+    case 'aws':
+      return 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg';
+    case 'firebase hosting':
+      return 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg';
+    case 'vercel':
+      return 'https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/vercel.svg';
+    case 'netlify':
+      return 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg';
     case 'java':
       return 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg';
     case 'python':
@@ -126,9 +140,9 @@ const getLogoUrl = (skillName: string) => {
     case 'figma':
       return 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg';
     case 'canva':
-      return 'https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/canva.svg';
+      return 'https://www.vectorlogo.zone/logos/canva/canva-icon.svg';
     case 'wordpress':
-      return 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg';
+      return 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg';
     case 'git':
       return 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg';
     case 'github':
@@ -148,7 +162,7 @@ const getLogoUrl = (skillName: string) => {
 
 const needsInvert = (name: string) => {
   const slug = name.toLowerCase().trim();
-  return slug === 'github' || slug === 'next.js' || slug === 'express.js';
+  return slug === 'github' || slug === 'next.js' || slug === 'express.js' || slug === 'vercel';
 };
 
 // Skill Card Logo Component (with Fallback)

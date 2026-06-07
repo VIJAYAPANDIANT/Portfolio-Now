@@ -6,31 +6,31 @@ export const Footer = () => {
   const [modalType, setModalType] = useState<'privacy' | 'terms' | null>(null);
 
   return (
-    <footer className="py-12 border-t border-white/10 relative z-40">
+    <footer className="py-6 border-t border-white/10 relative z-40">
       <div className="w-full max-w-[1400px] mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          className="space-y-4"
+          className="space-y-2"
         >
-          <p className="text-gray-500">
+          <p className="text-gray-500 text-sm">
             Built with <span className="text-neon-pink">❤️</span> by <span className="text-white font-bold">Vijayapandian T</span>
           </p>
-          <div className="flex justify-center gap-8 text-sm text-gray-600">
+          <div className="flex justify-center gap-8 text-xs text-gray-600">
             <button 
               onClick={() => setModalType('privacy')} 
-              className="hover:text-neon-blue transition-colors cursor-pointer font-mono text-xs uppercase tracking-wider"
+              className="hover:text-neon-blue transition-colors cursor-pointer font-mono text-[10px] uppercase tracking-wider"
             >
               Privacy Policy
             </button>
             <button 
               onClick={() => setModalType('terms')} 
-              className="hover:text-neon-blue transition-colors cursor-pointer font-mono text-xs uppercase tracking-wider"
+              className="hover:text-neon-blue transition-colors cursor-pointer font-mono text-[10px] uppercase tracking-wider"
             >
               Terms of Service
             </button>
           </div>
-          <p className="text-xs text-gray-700 mt-8 font-mono">
+          <p className="text-[10px] text-gray-700 mt-4 font-mono">
             © {new Date().getFullYear()} All Rights Reserved.
           </p>
         </motion.div>

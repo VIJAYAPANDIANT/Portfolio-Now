@@ -23,6 +23,15 @@ const timeline = [
   },
   {
     type: 'work',
+    title: 'Web Development Intern',
+    company: 'Tamizhan Skills',
+    period: 'March 2026',
+    location: 'Remote',
+    desc: 'Designed and built the Smart Resume Builder, a full-stack AI-powered Resume Builder and ATS Checker project, during the RISE Internship Program.',
+    icon: Briefcase
+  },
+  {
+    type: 'work',
     title: 'Java Developer & UI/UX Intern',
     company: 'Codec Technologies',
     period: 'January 2026',
