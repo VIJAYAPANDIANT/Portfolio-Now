@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Neon Gradient matching the theme -->
+    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f3ff" />
+      <stop offset="50%" stop-color="#bc13fe" />
+      <stop offset="100%" stop-color="#ff00ff" />
+    </linearGradient>
+    
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dark outer background ring (pushed slightly closer to the edge, thinner stroke) -->
+  <circle cx="256" cy="256" r="240" fill="#000000" stroke="url(#neonGrad)" stroke-width="16" filter="url(#glow)" />
+  
+  <!-- Outer tech dashes/notches (moved outer to give text maximum space) -->
+  <circle cx="256" cy="256" r="215" fill="none" stroke="#00f3ff" stroke-width="4" stroke-dasharray="30 50 100 50" stroke-opacity="0.5" />
+
+  <!-- The "VJ" text made significantly larger to fill the circle -->
+  <text 
+    x="256" 
+    y="355" 
+    font-family="system-ui, -apple-system, sans-serif" 
+    font-weight="900" 
+    font-size="290" 
+    fill="url(#neonGrad)" 
+    text-anchor="middle"
+    letter-spacing="-18"
+    filter="url(#glow)"
+  >VJ</text>
+</svg>
