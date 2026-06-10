@@ -105,16 +105,16 @@ export const Navbar = () => {
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden glass mt-4 rounded-xl overflow-hidden"
           >
-            <div className="flex flex-col p-4 space-y-4">
+            <div className="flex flex-col p-2 space-y-1">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
                   onClick={(e) => {
-                    setIsMobileMenuOpen(false);
                     handleNavClick(e, link.href);
+                    setIsMobileMenuOpen(false);
                   }}
-                  className="text-gray-300 hover:text-neon-blue transition-colors"
+                  className="block w-full px-4 py-3 text-xs font-mono uppercase tracking-widest text-gray-300 hover:text-neon-blue hover:bg-neon-blue/5 active:bg-neon-blue/10 transition-all rounded-lg"
                 >
                   {link.name}
                 </a>
