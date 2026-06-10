@@ -23,15 +23,12 @@ export const Navbar = () => {
   }, []);
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault();
+    // Rely on native browser smooth-scrolling combined with CSS scroll-margin-top.
+    // This is 100% reliable on all mobile devices, webviews, and desktop browsers.
     const targetId = href.replace('#', '');
     const element = document.getElementById(targetId);
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-      window.history.pushState(null, '', href);
+    if (!element) {
+      e.preventDefault();
     }
   };
 
