@@ -27,10 +27,21 @@ export const Navbar = () => {
     const targetId = href.replace('#', '');
     const element = document.getElementById(targetId);
     if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
+      const currentScrollY = window.scrollY !== undefined ? window.scrollY : window.pageYOffset;
+      const elementTop = element.getBoundingClientRect().top + currentScrollY;
+      const offset = 90; // offset of fixed navbar
+      
+      try {
+        window.scrollTo({
+          top: elementTop - offset,
+          behavior: 'smooth'
+        });
+      } catch (err) {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
       window.history.pushState(null, '', href);
     }
   };
@@ -112,7 +123,7 @@ export const Navbar = () => {
                     handleNavClick(e, link.href);
                     setTimeout(() => {
                       setIsMobileMenuOpen(false);
-                    }, 200);
+                    }, 300);
                   }}
                   className="block w-full px-4 py-3 text-xs font-mono uppercase tracking-widest text-gray-300 hover:text-neon-blue hover:bg-neon-blue/5 active:bg-neon-blue/10 transition-all rounded-lg"
                 >
