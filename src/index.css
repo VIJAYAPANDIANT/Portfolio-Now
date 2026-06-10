@@ -112,10 +112,6 @@
   @apply bg-neon-blue/20 rounded-full hover:bg-neon-blue/50 transition-colors;
 }
 
-/* Smooth Scroll */
-html {
-  scroll-behavior: smooth;
-}
 
 /* Hide scrollbar utility */
 .no-scrollbar::-webkit-scrollbar {

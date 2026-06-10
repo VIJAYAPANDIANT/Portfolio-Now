@@ -34,11 +34,11 @@ export const Navbar = () => {
       try {
         window.scrollTo({
           top: elementTop - offset,
-          behavior: 'smooth'
+          behavior: 'auto'
         });
       } catch (err) {
         element.scrollIntoView({
-          behavior: 'smooth',
+          behavior: 'auto',
           block: 'start'
         });
       }
