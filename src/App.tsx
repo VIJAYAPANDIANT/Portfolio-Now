@@ -122,15 +122,10 @@ export default function App() {
 function SectionWrapper({ children }: { children: React.ReactNode }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 50, skewX: -5 }}
-      whileInView={{ opacity: 1, y: 0, skewX: 0 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       viewport={{ once: true, margin: "-100px" }}
-      transition={{ 
-        duration: 0.8, 
-        type: "spring", 
-        stiffness: 50,
-        damping: 20
-      }}
+      transition={{ duration: 0.8 }}
       className="relative"
     >
       {/* Holographic glitch line */}
