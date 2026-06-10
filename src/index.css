@@ -15,6 +15,9 @@
     @apply bg-black text-white selection:bg-neon-blue/30 selection:text-neon-blue font-sans;
     overflow-x: hidden;
   }
+  section {
+    scroll-margin-top: 90px;
+  }
 }
 
 @layer utilities {

@@ -27,11 +27,9 @@ export const Navbar = () => {
     const targetId = href.replace('#', '');
     const element = document.getElementById(targetId);
     if (element) {
-      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-      const offset = 80; // height of fixed navbar
-      window.scrollTo({
-        top: elementPosition - offset,
-        behavior: 'smooth'
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
       });
       window.history.pushState(null, '', href);
     }
