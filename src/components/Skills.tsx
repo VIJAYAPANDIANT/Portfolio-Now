@@ -53,7 +53,7 @@ const skills = [
   { name: 'Next.js', categories: ['frontend'], icon: Layers, color: 'text-white' },
 
   // Backend Development
-  { name: 'Java (Spring Boot)', categories: ['backend'], icon: Coffee, color: 'text-green-500' },
+  { name: 'Spring Boot', categories: ['backend'], icon: Coffee, color: 'text-green-500' },
   { name: 'Node.js', categories: ['backend'], icon: Cpu, color: 'text-green-600' },
   { name: 'Express.js', categories: ['backend'], icon: Terminal, color: 'text-gray-300' },
 
@@ -61,7 +61,7 @@ const skills = [
   { name: 'PostgreSQL', categories: ['database'], icon: Database, color: 'text-blue-400' },
   { name: 'MongoDB', categories: ['database'], icon: Leaf, color: 'text-green-500' },
   { name: 'MySQL', categories: ['database'], icon: Database, color: 'text-blue-500' },
-  { name: 'Prisma', categories: ['database'], icon: Network, color: 'text-indigo-400' },
+  { name: 'SQLite', categories: ['database'], icon: Database, color: 'text-sky-400' },
 
   // Cloud & Deployment
   { name: 'AWS', categories: ['cloud'], icon: Cloud, color: 'text-orange-400' },
@@ -120,7 +120,7 @@ const getLogoUrl = (skillName: string) => {
       return 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg';
     case 'next.js':
       return 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg';
-    case 'java (spring boot)':
+    case 'spring boot':
       return 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg';
     case 'node.js':
       return 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg';
@@ -132,8 +132,8 @@ const getLogoUrl = (skillName: string) => {
       return 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg';
     case 'mysql':
       return 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg';
-    case 'prisma':
-      return 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg';
+    case 'sqlite':
+      return 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg';
     case 'excel':
       return 'https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/microsoftexcel.svg';
     case 'figma':
