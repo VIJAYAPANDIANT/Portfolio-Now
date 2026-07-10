@@ -10,7 +10,7 @@ const projects = [
     category: 'Web',
     tech: ['React', 'Express.js', 'PostgreSQL', 'Gemini API', 'Tailwind'],
     image: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=800&q=80',
-    github: 'https://github.com/VIJAYAPANDIANT/Smart-Resume-Builder',
+    github: 'https://github.com/VIJAYAPANDIANT/smart-resume-builder',
     live: 'https://smart-resume-builder-a1ej.vercel.app'
   },
   {
@@ -20,8 +20,8 @@ const projects = [
     category: 'AI',
     tech: ['Node.js', 'Express.js', 'Supabase', 'Leaflet.js', 'Chart.js', 'Gemini API'],
     image: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=80',
-    github: 'https://github.com/VIJAYAPANDIANT/AI-Powered-Smart-Waste-Mapping-Platform',
-    live: '#'
+    github: 'https://github.com/VIJAYAPANDIANT/ai-powered-smart-waste-mapping-platform',
+    live: 'https://ai-powered-smart-waste-mapping-plat.vercel.app'
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const projects = [
     category: 'Backend',
     tech: ['React', 'Spring Boot', 'MySQL', 'Docker', 'WebSockets'],
     image: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=800&q=80',
-    github: 'https://github.com/VIJAYAPANDIANT/Online-Examination-System',
+    github: 'https://github.com/VIJAYAPANDIANT/online-examination-system',
     live: 'https://online-examination-system-m6sf.vercel.app'
   },
   {
@@ -40,7 +40,7 @@ const projects = [
     category: 'Web',
     tech: ['Next.js', 'React', 'TypeScript', 'Prisma', 'PostgreSQL', 'Tailwind', 'Zustand'],
     image: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80',
-    github: 'https://github.com/VIJAYAPANDIANT/College-Discovery-Platform',
+    github: 'https://github.com/VIJAYAPANDIANT/college-discovery-platform',
     live: 'https://college-discovery-platform-mfqh.vercel.app'
   }
 ];
