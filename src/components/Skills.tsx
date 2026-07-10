@@ -62,7 +62,6 @@ const skills = [
   { name: 'MongoDB', categories: ['database'], icon: Leaf, color: 'text-green-500' },
   { name: 'MySQL', categories: ['database'], icon: Database, color: 'text-blue-500' },
   { name: 'Prisma', categories: ['database'], icon: Network, color: 'text-indigo-400' },
-  { name: 'DBMS', categories: ['database'], icon: Layers, color: 'text-emerald-400' },
 
   // Cloud & Deployment
   { name: 'AWS', categories: ['cloud'], icon: Cloud, color: 'text-orange-400' },
