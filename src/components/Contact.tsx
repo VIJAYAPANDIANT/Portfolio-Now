@@ -53,11 +53,17 @@ export const Contact = () => {
   return (
     <section id="contact" className="py-24">
       <div className="w-full max-w-[1400px] mx-auto px-6">
-        <div className="flex items-center gap-4 mb-16">
-          <div className="h-px w-12 bg-neon-blue" />
-          <h2 className="text-3xl md:text-4xl font-bold font-mono uppercase tracking-tighter whitespace-nowrap">
-            <span className="text-neon-blue">05.</span> CONTACT US
-          </h2>
+        <div className="flex flex-col mb-16">
+          <div className="flex items-center gap-4">
+            <div className="h-[2px] w-12 bg-neon-blue" />
+            <h2 className="text-3xl md:text-4xl font-bold font-mono uppercase tracking-tighter whitespace-nowrap">
+              <span className="text-neon-blue">05.</span> Connect With Me
+            </h2>
+          </div>
+          <div className="text-xs font-mono text-neon-blue mt-2 ml-16 flex items-center gap-2 tracking-widest uppercase">
+            <span className="inline-block w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+            Available for Internships & SDE Opportunities
+          </div>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-12">
@@ -94,6 +100,17 @@ export const Contact = () => {
                   <p className="text-lg font-mono">Chennai, India</p>
                 </div>
               </div>
+            </div>
+
+            <div className="space-y-2 py-2">
+              <h3 className="text-base font-mono font-bold text-white uppercase tracking-wider">
+                Let's build something amazing together.
+              </h3>
+              <p className="text-gray-400 text-xs leading-relaxed font-light">
+                Whether it's software engineering, backend development,
+                full-stack applications, or AI-powered solutions,
+                I'd love to connect.
+              </p>
             </div>
 
             <div className="flex flex-wrap gap-3">
