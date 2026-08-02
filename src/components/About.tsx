@@ -48,16 +48,16 @@ export const About = () => {
               </div>
             </div>
             <p className="text-gray-400 text-lg leading-relaxed mb-6 font-light">
-              I am a <strong className="text-white font-semibold">Pre-Final Year Computer Science Engineering student</strong> at <strong className="text-white font-semibold">SRM Easwari Engineering College</strong>, passionate about building <strong className="text-white font-semibold">scalable software systems</strong>, <strong className="text-white font-semibold">backend applications</strong>, and <strong className="text-white font-semibold">AI-driven solutions</strong>.
+              I am a <strong className="text-white font-semibold">Pre-Final Year Computer Science Engineering student</strong> at <strong className="text-white font-semibold">SRM Easwari Engineering College</strong>, aspiring to become a <strong className="text-white font-semibold">Software Development Engineer (SDE)</strong>. I am passionate about building <strong className="text-white font-semibold">scalable, high-performance, and AI-powered software solutions</strong> that solve real-world problems.
             </p>
             <p className="text-gray-400 text-lg leading-relaxed mb-6 font-light">
-              With a strong focus on <strong className="text-white font-semibold">problem solving</strong>, <strong className="text-white font-semibold">full-stack development</strong>, and <strong className="text-white font-semibold">modern software engineering</strong>, I enjoy transforming ideas into practical, real-world applications.
+              My primary focus is <strong className="text-white font-semibold">Java Full Stack Development</strong>, with hands-on experience in <strong className="text-white font-semibold">Java, Spring Boot, React, JavaScript, SQL, Node.js, Express.js, MySQL, PostgreSQL, MongoDB, and Firebase</strong>. I enjoy designing backend systems, developing RESTful APIs, and building modern full-stack web applications while continuously strengthening my problem-solving skills through <strong className="text-white font-semibold">Data Structures & Algorithms (DSA)</strong>.
             </p>
             <p className="text-gray-400 text-lg leading-relaxed mb-6 font-light">
-              My expertise includes <strong className="text-white font-semibold">Java, JavaScript, SQL, and modern web technologies</strong>, with hands-on experience developing <strong className="text-white font-semibold">web applications, backend systems, and intelligent software solutions</strong>.
+              Through internships, personal projects, and continuous learning, I have gained practical experience in <strong className="text-white font-semibold">software engineering, backend development, database design, cloud technologies, and AI integration</strong>. I enjoy transforming ideas into scalable, maintainable, and user-focused applications.
             </p>
             <p className="text-gray-400 text-lg leading-relaxed mb-8 font-light">
-              Whether designing scalable APIs, building interactive user experiences, or exploring Artificial Intelligence, I aim to create technology that delivers <strong className="text-white font-semibold">impact, performance, and meaningful innovation</strong>.
+              I am continuously learning and exploring <strong className="text-white font-semibold">software architecture, cloud computing, system design, and Artificial Intelligence</strong> to become a <strong className="text-white font-semibold">well-rounded software engineer</strong> ready to build impactful products.
             </p>
             
             <div className="grid grid-cols-2 gap-6">
