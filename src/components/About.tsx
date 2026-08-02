@@ -1,7 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 
 export const About = () => {
+  const [views, setViews] = useState<number | null>(null);
+
+  useEffect(() => {
+    const fetchViews = async () => {
+      try {
+        const isVisited = sessionStorage.getItem('vj_portfolio_visited');
+        const endpoint = isVisited
+          ? 'https://api.counterapi.dev/v1/vijayapandian_portfolio/views'
+          : 'https://api.counterapi.dev/v1/vijayapandian_portfolio/views/up';
+        
+        const response = await fetch(endpoint);
+        if (response.ok) {
+          const data = await response.json();
+          setViews(data.count);
+          if (!isVisited) {
+            sessionStorage.setItem('vj_portfolio_visited', 'true');
+          }
+        }
+      } catch (err) {
+        console.error('Error fetching views:', err);
+      }
+    };
+    fetchViews();
+  }, []);
+
   return (
     <section id="about" className="py-24 relative overflow-hidden">
       <div className="w-full max-w-[1400px] mx-auto px-6">
@@ -43,8 +68,10 @@ export const About = () => {
                   <span className="text-neon-blue">01.</span> PROFILE
                 </h2>
               </div>
-              <div className="text-[10px] font-mono text-neon-blue mt-1.5 ml-16 tracking-widest uppercase">
-                SYSTEM STATUS: ACTIVE
+              <div className="text-[10px] font-mono text-neon-blue mt-1.5 ml-16 tracking-widest uppercase opacity-85 flex items-center gap-4">
+                <span>SYSTEM STATUS: ACTIVE</span>
+                <span>•</span>
+                <span>VIEWS: {views !== null ? views.toString().padStart(6, '0') : '------'}</span>
               </div>
             </div>
             <p className="text-gray-400 text-lg leading-relaxed mb-6 font-light">
