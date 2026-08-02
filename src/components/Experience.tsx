@@ -90,11 +90,18 @@ export const Experience = () => {
   return (
     <section id="experience" className="py-[90px] bg-black/50">
       <div className="w-full max-w-[1400px] mx-auto px-6">
-        <div className="flex items-center gap-4 mb-16">
-          <div className="h-px w-12 bg-neon-blue" />
-          <h2 className="text-4xl font-bold font-mono uppercase tracking-tighter">
-            <span className="text-neon-blue">04.</span> EXPERIENCE_LOG
-          </h2>
+        <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-16 gap-8">
+          <div className="text-left">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="h-[2px] w-12 bg-neon-blue" />
+              <h2 className="text-3xl md:text-4xl font-bold font-mono uppercase tracking-tighter whitespace-nowrap">
+                <span className="text-neon-blue">04.</span> Experience_Log
+              </h2>
+            </div>
+            <p className="text-gray-500 font-mono text-xs uppercase tracking-widest">
+              [ Total_Entries: {timeline.length} ] [ Status: Verified ]
+            </p>
+          </div>
         </div>
 
         <div className="max-w-4xl mx-auto relative">
