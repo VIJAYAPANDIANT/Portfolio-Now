@@ -51,7 +51,7 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24">
+    <section id="contact" className="py-[90px]">
       <div className="w-full max-w-[1400px] mx-auto px-6">
         <div className="flex flex-col mb-16">
           <div className="flex items-center gap-4">

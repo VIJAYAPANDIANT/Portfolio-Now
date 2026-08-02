@@ -55,7 +55,7 @@ export const Projects = () => {
   );
 
   return (
-    <section id="projects" className="py-24">
+    <section id="projects" className="py-[90px]">
       <div className="w-full max-w-[1400px] mx-auto px-6">
         <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-16 gap-8">
           <div className="text-left">

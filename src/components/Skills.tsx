@@ -259,7 +259,7 @@ export const Skills = () => {
   const row3Repeated = getRepeatedRow(row3, 8);
 
   return (
-    <section id="skills" className="py-24 bg-black/50 relative overflow-hidden">
+    <section id="skills" className="py-[90px] bg-black/50 relative overflow-hidden">
       <div className="w-full max-w-[1400px] mx-auto px-6">
         {/* Title */}
         <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-16 gap-8">

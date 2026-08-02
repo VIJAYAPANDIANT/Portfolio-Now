@@ -88,7 +88,7 @@ const timeline = [
 
 export const Experience = () => {
   return (
-    <section id="experience" className="py-24 bg-black/50">
+    <section id="experience" className="py-[90px] bg-black/50">
       <div className="w-full max-w-[1400px] mx-auto px-6">
         <div className="flex items-center gap-4 mb-16">
           <div className="h-px w-12 bg-neon-blue" />
