@@ -114,8 +114,8 @@ export const Contact = () => {
                 <Github size={20} />
               </motion.a>
               <motion.a
-                href="https://vj-achievement-museum.vercel.app/"
-                target="_blank" rel="noopener noreferrer" aria-label="Achievement Museum" title="Achievement Museum"
+                href="https://vj-achievement-universe.vercel.app/"
+                target="_blank" rel="noopener noreferrer" aria-label="Achievement Universe" title="Achievement Universe"
                 whileHover={{ y: -3, backgroundColor: 'rgba(0, 243, 255, 0.1)' }}
                 className="p-4 glass rounded-sm text-gray-500 hover:text-neon-blue transition-all border border-white/5 flex items-center justify-center"
               >

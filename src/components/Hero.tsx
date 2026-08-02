@@ -51,7 +51,7 @@ export const Hero = () => {
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
             <motion.a
-              href="https://vj-achievement-museum.vercel.app/"
+              href="https://vj-achievement-universe.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, letterSpacing: '0.1em' }}
