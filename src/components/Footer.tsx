@@ -13,9 +13,6 @@ export const Footer = () => {
           whileInView={{ opacity: 1 }}
           className="space-y-2"
         >
-          <p className="text-gray-500 text-sm">
-            Built with <span className="text-neon-pink">❤️</span> by <span className="text-white font-bold">Vijayapandian T</span>
-          </p>
           <div className="flex justify-center gap-8 text-xs text-gray-600">
             <button 
               onClick={() => setModalType('privacy')} 
@@ -30,8 +27,8 @@ export const Footer = () => {
               Terms of Service
             </button>
           </div>
-          <p className="text-[10px] text-gray-700 mt-4 font-mono">
-            © {new Date().getFullYear()} All Rights Reserved.
+          <p className="text-[10px] text-gray-500 mt-4 font-mono">
+            Built with <span className="text-neon-pink">❤️</span> by <span className="text-white font-bold">Vijayapandian T</span> &copy; {new Date().getFullYear()} Vijayapandian T. All rights reserved.
           </p>
         </motion.div>
       </div>
