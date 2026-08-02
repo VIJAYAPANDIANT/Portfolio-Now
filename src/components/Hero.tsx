@@ -5,7 +5,7 @@ import { ArrowRight, Download } from 'lucide-react';
 
 export const Hero = () => {
   return (
-    <section id="home" className="relative min-h-[80vh] md:min-h-[90vh] py-20 flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative pt-32 pb-24 flex items-center justify-center overflow-hidden">
       <div className="container mx-auto px-6 z-10 text-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
