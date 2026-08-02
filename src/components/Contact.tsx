@@ -57,12 +57,12 @@ export const Contact = () => {
           <div className="flex items-center gap-4">
             <div className="h-[2px] w-12 bg-neon-blue" />
             <h2 className="text-3xl md:text-4xl font-bold font-mono uppercase tracking-tighter whitespace-nowrap">
-              <span className="text-neon-blue">05.</span> Connect With Me
+              <span className="text-neon-blue">05.</span> Let's Connect
             </h2>
           </div>
-          <div className="text-xs font-mono text-neon-blue mt-2 ml-16 flex items-center gap-2 tracking-widest uppercase">
+          <div className="text-xs font-mono text-neon-blue mt-2 ml-16 flex items-center gap-2 tracking-wide uppercase">
             <span className="inline-block w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-            Available for Internships & SDE Opportunities
+            Open to Internships, SDE Roles & Collaboration Opportunities
           </div>
         </div>
 
@@ -97,7 +97,7 @@ export const Contact = () => {
                   <MapPin size={18} />
                 </div>
                 <div>
-                  <p className="text-lg font-mono">Chennai, India</p>
+                  <p className="text-lg font-mono">Chennai, Tamil Nadu, India</p>
                 </div>
               </div>
             </div>
