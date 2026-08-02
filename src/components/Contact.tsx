@@ -198,37 +198,37 @@ export const Contact = () => {
             <form onSubmit={handleSubmit} className="glass p-8 rounded-sm space-y-6 border-t border-neon-blue/20">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Input_Name</label>
+                  <label className="text-[10px] font-mono text-gray-500 uppercase tracking-widest">OPERATOR_ID</label>
                   <input
                     type="text"
                     required
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     className="w-full bg-black/40 border border-white/10 rounded-sm px-4 py-3 font-mono text-sm focus:outline-none focus:border-neon-blue transition-colors text-white"
-                    placeholder="IDENTIFY_YOURSELF"
+                    placeholder="Enter your name"
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Input_Email</label>
+                  <label className="text-[10px] font-mono text-gray-500 uppercase tracking-widest">EMAIL_ADDRESS</label>
                   <input
                     type="email"
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className="w-full bg-black/40 border border-white/10 rounded-sm px-4 py-3 font-mono text-sm focus:outline-none focus:border-neon-blue transition-colors text-white"
-                    placeholder="RETURN_ADDRESS"
+                    placeholder="Enter your email"
                   />
                 </div>
               </div>
               <div className="space-y-2">
-                <label className="text-[10px] font-mono text-gray-500 uppercase tracking-widest">Transmission_Body</label>
+                <label className="text-[10px] font-mono text-gray-500 uppercase tracking-widest">MESSAGE_PAYLOAD</label>
                 <textarea
                   rows={4}
                   required
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   className="w-full bg-black/40 border border-white/10 rounded-sm px-4 py-3 font-mono text-sm focus:outline-none focus:border-neon-blue transition-colors resize-none text-white"
-                  placeholder="ENTER_MESSAGE_DATA..."
+                  placeholder="Tell me about your project, opportunity, or collaboration..."
                 />
               </div>
               <motion.button
@@ -245,7 +245,7 @@ export const Contact = () => {
                 ) : status === 'error' ? (
                   'Transmission Failed!'
                 ) : (
-                  <>Execute Transmission <Send size={18} /></>
+                  <>Send Transmission <Send size={18} /></>
                 )}
               </motion.button>
               {status === 'success' && (
