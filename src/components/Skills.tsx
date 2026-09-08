@@ -22,7 +22,8 @@ import {
   Server,
   Network,
   Leaf,
-  Cloud
+  Cloud,
+  Zap
 } from 'lucide-react';
 
 const categories = [
@@ -51,11 +52,13 @@ const skills = [
   { name: 'Bootstrap', categories: ['frontend'], icon: Laptop, color: 'text-purple-500' },
   { name: 'React', categories: ['frontend'], icon: Atom, color: 'text-cyan-400' },
   { name: 'Next.js', categories: ['frontend'], icon: Layers, color: 'text-white' },
+  { name: 'Vite', categories: ['frontend'], icon: Zap, color: 'text-purple-400' },
 
   // Backend Development
   { name: 'Spring Boot', categories: ['backend'], icon: Coffee, color: 'text-green-500' },
   { name: 'Node.js', categories: ['backend'], icon: Cpu, color: 'text-green-600' },
   { name: 'Express.js', categories: ['backend'], icon: Terminal, color: 'text-gray-300' },
+  { name: 'Flask', categories: ['backend'], icon: Server, color: 'text-gray-200' },
 
   // Database & Concepts
   { name: 'PostgreSQL', categories: ['database'], icon: Database, color: 'text-blue-400' },
@@ -154,6 +157,10 @@ const getLogoUrl = (skillName: string) => {
       return 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg';
     case 'eclipse':
       return 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original.svg';
+    case 'vite':
+      return 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg';
+    case 'flask':
+      return 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg';
     default:
       return null;
   }
@@ -161,7 +168,7 @@ const getLogoUrl = (skillName: string) => {
 
 const needsInvert = (name: string) => {
   const slug = name.toLowerCase().trim();
-  return slug === 'github' || slug === 'next.js' || slug === 'express.js' || slug === 'vercel';
+  return slug === 'github' || slug === 'next.js' || slug === 'express.js' || slug === 'vercel' || slug === 'flask';
 };
 
 // Skill Card Logo Component (with Fallback)
